@@ -1,4 +1,4 @@
-# Restecable REST Message API
+# Restectable REST Message API
 Restectable is a REST API for storing and retrieving messages.
 
 ## About
