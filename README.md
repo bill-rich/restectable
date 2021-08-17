@@ -19,7 +19,7 @@ restectable
 
 * ***POST /message***: Add a new message to be stored.
   * Body: JSON ```{ "content": "coolmessage" }```
-  * Response: JSON ```{ "hash": "f719a89a21181e181e16e3f42c1740b712a2061b72cd5fe41a41da472110ec89" }```
+  * Response: 200, JSON ```{ "hash": "f719a89a21181e181e16e3f42c1740b712a2061b72cd5fe41a41da472110ec89" }```
 * ***GET /message/{sha256hash}***: Retrieves the message with the associated
   hash.
   * Response: 200, Message retrieved. BODY: JSON ```{ "message": "coolmessage" }```
