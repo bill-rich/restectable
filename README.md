@@ -1,5 +1,5 @@
 # Restectable REST Message API
-Restectable is a REST API for storing and retrieving messages.
+Restectable is a respectable REST API for storing and retrieving messages.
 
 ## About
 Restectable stores messages in memory to be retrieved at a later time using the
