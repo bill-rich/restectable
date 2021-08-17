@@ -72,6 +72,20 @@ func TestRetrieveMessage(t *testing.T) {
 	}
 }
 
+func TestMissingMessage(t *testing.T) {
+	router := setupRouter()
+
+	// Create the new request to retrieve the message using the sha256sum.
+	req := getTestMessageRequest("123")
+
+	w := httptest.NewRecorder()
+	router.ServeHTTP(w, req)
+
+	if w.Code != 404 {
+		t.Error(fmt.Errorf("expected error code 404, got: %d", w.Code))
+	}
+}
+
 func createTestMessageRequest(messageContent string) *http.Request {
 	var message Message
 	message = Message{

@@ -41,6 +41,10 @@ func createMessage(c *gin.Context) {
 
 func getMessage(c *gin.Context) {
 	hash := c.Param("hash")
+	if _, ok := messages[hash]; !ok {
+		c.JSON(404, nil)
+		return
+	}
 	c.JSON(200, gin.H{
 		"content": messages[hash],
 	})
