@@ -6,7 +6,7 @@ Restectable stores messages in memory to be retrieved at a later time using the
 SHA256 hash of the message content. If a hash collision occurs, the newest
 instance of the message will be stored and the old one will be lost.
 
-The restectable server always runs on port 8080.
+The restectable server always runs locally on port 8080.
 
 ## How To Run
 
